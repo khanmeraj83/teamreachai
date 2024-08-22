@@ -97,43 +97,6 @@
   margin-bottom: 16px;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-  .article-container {
-    padding: 15px;
-  }
-
-  .article-content h1 {
-    font-size: 22px;
-  }
-
-  .article-content h2 {
-    font-size: 18px;
-  }
-
-  .article-content p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .article-container {
-    padding: 10px;
-  }
-
-  .article-content h1 {
-    font-size: 20px;
-  }
-
-  .article-content h2 {
-    font-size: 16px;
-  }
-
-  .article-content p {
-    font-size: 13px;
-  }
-}
-
 /* styles/EditableList.module.css */
 
 .headingInput {
@@ -207,12 +170,14 @@
 .footer-right {
   display: flex;
   align-items: center;
+  margin-right: 9rem;
 }
 
 .footer-left .grid {
   display: grid;
   grid-template-columns: repeat(6, 8px);
   grid-gap: 5px;
+  margin-left: 9rem;
 }
 
 .footer-left .dot {
@@ -229,4 +194,77 @@
 .footer-right .chevron {
   font-size: 30px; /* Chevron icon size */
   font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .article-container {
+    padding: 15px;
+  }
+
+  .article-content h1 {
+    font-size: 22px;
+  }
+
+  .article-content h2 {
+    font-size: 18px;
+  }
+
+  .article-content p {
+    font-size: 14px;
+  }
+  .footer-left .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 8px);
+    grid-gap: 5px;
+    margin-left: 0;
+  }
+  .footer-right {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-container {
+    padding: 10px;
+  }
+
+  .article-content h1 {
+    font-size: 20px;
+  }
+
+  .article-content h2 {
+    font-size: 16px;
+  }
+
+  .article-content p {
+    font-size: 13px;
+  }
+  .footer-left .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 8px);
+    grid-gap: 5px;
+    margin-left: 0;
+  }
+  .footer-right {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1120px) {
+  .footer-left .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 8px);
+    grid-gap: 5px;
+    margin-left: 0;
+  }
+  .footer-right {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
 }
