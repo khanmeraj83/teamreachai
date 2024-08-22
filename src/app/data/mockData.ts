@@ -1,0 +1,7 @@
+import { Item } from "../Types/types";
+
+
+  export const initialItems: Item[] = [
+    { id: 1, heading: 'Smaller Board Sizes', content: 'There is a growing trend towards reducing the size of boards, particularly in not-for-profit organizations. Smaller boards are seen as more agile and effective, allowing for quicker decision-making and more dynamic discussions. Steven Bowman highlighted this issue, noting that "in many organizations, particularly in Australia, the board sizes are between 14 and 16... Makes no sense." This trend is shifting towards more streamlined boards that can better meet the demands of modern governance.', editable: false },
+    { id: 2, heading: 'Term Limits for Board Members', content: 'There is a growing trend towards reducing the size of boards, particularly in not-for-profit organizations. Smaller boards are seen as more agile and effective, allowing for quicker decision-making and more dynamic discussions. Steven Bowman highlighted this issue, noting that "in many organizations, particularly in Australia, the board sizes are between 14 and 16... Makes no sense." This trend is shifting towards more streamlined boards that can better meet the demands of modern governance.', editable: false },
+  ];
